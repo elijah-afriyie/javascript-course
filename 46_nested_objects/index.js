@@ -41,3 +41,24 @@ const person3 = new Person(
 console.log(person1.name);
 console.log(person1.age);
 console.log(person1.address.country);
+
+
+/* ======= NEW EXAMPLE ======= */
+const obj = {
+    user: {
+        id: 1,
+        profile: {
+            firstName: "Pixie",
+            lastName: "Lane",
+            hobbies: ["reading", "swimming"]
+        }
+    }
+};
+
+const {
+    user: {
+        profile: {firstName, hobbies}
+    }
+} = obj;
+
+console.log(hobbies.map(hobbies => hobbies.toUpperCase()));

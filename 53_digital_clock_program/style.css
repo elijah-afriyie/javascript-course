@@ -1,4 +1,17 @@
 body {
-  font-family: Verdana;
-  font-size: 1em;
+  margin: 0;
+}
+
+#clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#clock {
+  font-family: monospace;
+  font-size: 6.5rem;
+  font-weight: bold;
+  text-align: center;
 }
